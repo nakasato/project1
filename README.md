@@ -15,6 +15,7 @@ físico-químicas (input) e sensoriais (output) estão disponíveis (por exemplo
 - Matriz de dispersão das variáveis numéricas colorida pela gradação de qualidade do vinho;
 - Limpeza de outliers na _density_ (descobertos no passo anterior);
 - Pairplot de todas as variáveis, corrigidas, distinguidas pelo _type_ do vinho.
+
 **Nota:** os tratamentos de sanitização que se fizeram necessários nesta etapa serão replicados nas próximas, de modelagem propriamente.
 
 **2.a. Estratégia de modelagem:** a estratégia de modelagem foi grandemente influenciada pela distribuição de _y = quality_ observada no quarto tópico da seção anterior. A variável tomava valores discretos de 3 a 9, de sorte que é intuitivo supor que uma solução à regressão da forma _quality = f(density, pH, alcohol,...)_ fosse uma boa alternativa. Apesar da variedade de modelos de regressão testados, as soluções deixaram a desejar. Assim, modificamos um pouco o problema, criando categorias baseadas em ranges da qualidade, e modelamos como um problema de classificação: primeiro considerando três tipos de qualidade diferentes, depois apenas dois (bom ou ruim). Portanto, em resumo:
