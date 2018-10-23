@@ -35,8 +35,4 @@ De modo geral, podemos concluir que converter esse problema para um problema de 
 
 O caso da classificação em 3 grupos original também deixou a desejar, com acurácias alcançando no máximo 70%. O melhor caso, o modelo de classificação em 2 grupos, teve um desempenho aceitável, com acurácia elevada e uma matriz de confusão bem ponderada com falsos-positivos/negativos.
 
-Em todos as ocasiões, um melhor tuning de hiperparâmetros via GridSearch provavelmente melhoraria de forma significativa os resultados
-
-
-
-# project1
+Em todos as ocasiões, um melhor tuning de hiperparâmetros via GridSearch provavelmente melhoraria de forma significativa os resultados.
