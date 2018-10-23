@@ -9,10 +9,10 @@ físico-químicas (input) e sensoriais (output) estão disponíveis (por exemplo
 **1. Análise exploratória:** está contida no arquivo `analise_exploratoria.ipynb`. Síntese dos passos:
 - Abertura do dataset e checagem de tipos, colunas e registros nulos;
 - Correção da variável _alcohol_;
-- Estatística descritiva básica de todo dataframe
+- Estatística descritiva básica de todo dataframe;
 - Distribuição da variável dependente _quality_;
-- Heatmap d e correlações entre todas as variáveis numéricas;
-- Matriz de dispersão das variáveis numéricas colorida pela gradação de qualidade do vinho;
+- Heatmap de correlações entre todas as variáveis numéricas;
+- Matriz de dispersão das variáveis numéricas colorida pela gradação da qualidade do vinho;
 - Limpeza de outliers na _density_ (descobertos no passo anterior);
 - Pairplot de todas as variáveis, corrigidas, distinguidas pelo _type_ do vinho.
 
@@ -23,7 +23,7 @@ físico-químicas (input) e sensoriais (output) estão disponíveis (por exemplo
 - Resolução como classificação em 3 grupos: `modelos_de_classificacao_3grupos.ipynb`;
 - Resolução como classificação em 2 grupos: `modelos_de_classificacao_2grupos.ipynb`.
 
-**2.b. Função de custo:** funções de custo comuns baseadas erro quadrático médio (para regressão) e gradiente descendente (para classificação com redes neurais).
+**2.b. Função de custo:** funções de custo comuns baseadas em erro quadrático médio (para regressão) e em gradiente descendente (para classificação com redes neurais).
 
 **2.c. Critério de seleção do modelo final:** dois critérios foram utilizados, um para cada tipo de problema:
 - Regressão: menor RMSE entre um modelo selecionado após baterias de testes via _auto-sklearn_, _regressão linear à múltiplas variáveis_, _random forest_ e _decision trees_. A regressão linear se saiu melhor, com _RMSE = 0.64_ e _RMSE normalizado = 0.11_.
@@ -36,4 +36,4 @@ De modo geral, podemos concluir que converter esse problema para um problema de 
 
 O caso da classificação em 3 grupos original também deixou a desejar, com acurácias alcançando no máximo 70%. O melhor caso, o modelo de classificação em 2 grupos, teve um desempenho aceitável, com acurácia elevada e uma matriz de confusão bem ponderada com falsos-positivos/negativos.
 
-Em todos as ocasiões, um melhor tuning de hiperparâmetros via GridSearch provavelmente melhoraria de forma significativa os resultados.
+Em todas as ocasiões, um melhor tuning de hiperparâmetros via GridSearch provavelmente melhoraria de forma significativa os resultados.
